@@ -60,7 +60,7 @@ information as you work through the tests.
     * `payPerHour`
     * `timeInEvents`
     * `timeOutEvents`
-* **Behavior**
+* **Behaviour**
   * Loads `Array` elements into corresponding `Object` properties.
     _Additionally_, initialize empty `Array`s on the properties `timeInEvents`
     and `timeOutEvents`.
@@ -71,7 +71,7 @@ information as you work through the tests.
   * `Array` of `Arrays`
 * **Returns**
   * `Array` of `Object`s
-* **Behavior**
+* **Behaviour**
   * Converts each nested `Array` into an employee record using
     `createEmployeeRecord` and accumulates it to a new `Array`
 
@@ -81,7 +81,7 @@ information as you work through the tests.
   * A date stamp (`"YYYY-MM-DD HHMM"`), where time is expressed in [24-hour standard][miltime]
 * **Returns**
   * The record that was just updated
-* **Behavior**
+* **Behaviour**
   * Add an `Object` with keys:
     * `type`: Set to `"TimeIn"`
     * `hour`: Derived from the argument
@@ -93,7 +93,7 @@ information as you work through the tests.
   * A date stamp (`"YYYY-MM-DD HHMM"`), where time is expressed in [24-hour standard][miltime]
 * **Returns**
   * The record that was just updated
-* **Behavior**
+* **Behaviour**
   * Add an `Object` with keys:
     * `type`: Set to `"TimeOut"`
     * `hour`: Derived from the argument
@@ -105,7 +105,7 @@ information as you work through the tests.
   * A date of the form `"YYYY-MM-DD"`
 * **Returns**
   * Hours worked, an `Integer`
-* **Behavior**
+* **Behaviour**
   * Given a date, find the number of hours elapsed between that date's
     timeInEvent and timeOutEvent
 
@@ -115,7 +115,7 @@ information as you work through the tests.
   * A date of the form `"YYYY-MM-DD"`
 * **Returns**
   * Pay owed
-* **Behavior**
+* **Behaviour**
   * Using `hoursWorkedOnDate`, multiply the hours by the record's
     payRate to determine amount owed. Amount should be returned as a number.
 
@@ -125,7 +125,7 @@ information as you work through the tests.
   * _None_
 * **Returns**
   * Sum of pay owed to **one** employee for all dates, as a number
-* **Behavior**
+* **Behaviour**
   * Using `wagesEarnedOnDate`, accumulate the value of all dates worked by the
     employee in the record used as context. Amount should be returned as a
     number. **HINT**: You will need to find the available dates somehow....
@@ -137,7 +137,7 @@ information as you work through the tests.
   * `firstName`: String representing a first name held in an employee record
 * **Returns**
   * Matching record or `undefined`
-* **Behavior**
+* **Behaviour**
   * Test the `firstName` field for a match with the `firstName` argument
 
 ### `calculatePayroll`
@@ -146,7 +146,7 @@ information as you work through the tests.
   * `Array` of employee records
 * **Returns**
   * Sum of pay owed for **all** employees for all dates, as a number
-* **Behavior**
+* **Behaviour**
   * Using `allWagesFor` for each of the employees, accumulate the value of
     all dates worked by the employee in the record used as context. Amount
     should be returned as a number.
